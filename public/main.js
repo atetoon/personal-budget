@@ -14,9 +14,9 @@ const toSelect = document.getElementById("to");
 const amountInput = document.getElementById("amount");
 const transferBtn = document.getElementById("transfer-btn");
 
-// =========================
+
 // Load Envelopes
-// =========================
+
 
 async function loadEnvelopes() {
     try {
@@ -33,9 +33,8 @@ async function loadEnvelopes() {
     }
 }
 
-// =========================
 // Display Envelopes
-// =========================
+
 
 function displayEnvelopes(envelopes) {
 
@@ -89,9 +88,7 @@ function displayEnvelopes(envelopes) {
 
 }
 
-// =========================
 // Populate Dropdowns
-// =========================
 
 function populateDropdowns(envelopes) {
 
@@ -114,9 +111,7 @@ function populateDropdowns(envelopes) {
     });
 }
 
-// =========================
 // Create Envelope
-// =========================
 
 createBtn.addEventListener("click", async () => {
 
@@ -150,9 +145,7 @@ createBtn.addEventListener("click", async () => {
 
 });
 
-// =========================
 // Delete Envelope
-// =========================
 
 async function deleteEnvelope(id) {
 
@@ -168,9 +161,7 @@ async function deleteEnvelope(id) {
 
 }
 
-// =========================
 // Edit Envelope
-// =========================
 
 async function editEnvelope(id) {
 
@@ -201,9 +192,7 @@ async function editEnvelope(id) {
 
 }
 
-// =========================
 // Transfer Money
-// =========================
 
 transferBtn.addEventListener("click", async () => {
 
@@ -250,8 +239,6 @@ transferBtn.addEventListener("click", async () => {
 
 });
 
-// =========================
 // Initial Load
-// =========================
 
 loadEnvelopes();
