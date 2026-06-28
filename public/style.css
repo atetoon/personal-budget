@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+}
+
+header{
+    color:white;
+    margin-bottom:35px;
+}
+
+header h1{
+    font-size:2.6rem;
+    font-weight:700;
+}
+
+header p{
+    margin-top:8px;
+    opacity:.9;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:330px 1fr;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.card h2{
+    margin-bottom:18px;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    margin-bottom:15px;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    border-color:#667eea;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#667eea;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    background:#546de5;
+}
+
+.left{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.card-header span{
+    color:#888;
+}
+
+.envelope{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    border-radius:14px;
+    background:#f7f8fc;
+    margin-bottom:16px;
+    transition:.25s;
+}
+
+.envelope:hover{
+    transform:translateX(5px);
+}
+
+.envelope h3{
+    color:#333;
+}
+
+.envelope p{
+    margin-top:5px;
+    color:#777;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.actions button{
+    width:90px;
+    padding:10px;
+}
+
+.edit{
+    background:#27ae60;
+}
+
+.edit:hover{
+    background:#219150;
+}
+
+.delete{
+    background:#e74c3c;
+}
+
+.delete:hover{
+    background:#c0392b;
+}
+
+@media(max-width:900px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+}
