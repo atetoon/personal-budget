@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/envelopes";
+const API_URL = "/envelopes";
 
 const envelopeList = document.getElementById("envelope-list");
 const count = document.getElementById("count");
