@@ -1,4 +1,11 @@
-const API_URL = "/envelopes";
+const isLiveServer =
+    (window.location.hostname === "localhost" ||
+     window.location.hostname === "127.0.0.1") &&
+    window.location.port !== "3000";
+
+const API_URL = isLiveServer
+    ? "http://localhost:3000/envelopes"
+    : "/envelopes";
 
 const envelopeList = document.getElementById("envelope-list");
 const count = document.getElementById("count");
