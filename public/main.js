@@ -10,19 +10,16 @@ const API_URL = isLiveServer
 const envelopeList = document.getElementById("envelope-list");
 const count = document.getElementById("count");
 
-// Create
 const titleInput = document.getElementById("title");
 const balanceInput = document.getElementById("balance");
 const createBtn = document.getElementById("create-btn");
 
-// Transfer
 const fromSelect = document.getElementById("from");
 const toSelect = document.getElementById("to");
 const amountInput = document.getElementById("amount");
 const transferBtn = document.getElementById("transfer-btn");
 
 
-// Load Envelopes
 
 
 async function loadEnvelopes() {
@@ -40,7 +37,6 @@ async function loadEnvelopes() {
     }
 }
 
-// Display Envelopes
 
 
 function displayEnvelopes(envelopes) {
@@ -66,7 +62,7 @@ function displayEnvelopes(envelopes) {
         const actions = document.createElement("div");
         actions.className = "actions";
 
-        // Edit Button
+        
         const editBtn = document.createElement("button");
         editBtn.className = "edit";
         editBtn.textContent = "Edit";
@@ -75,7 +71,6 @@ function displayEnvelopes(envelopes) {
             editEnvelope(envelope.id);
         });
 
-        // Delete Button
         const deleteBtn = document.createElement("button");
         deleteBtn.className = "delete";
         deleteBtn.textContent = "Delete";
@@ -95,7 +90,6 @@ function displayEnvelopes(envelopes) {
 
 }
 
-// Populate Dropdowns
 
 function populateDropdowns(envelopes) {
 
@@ -118,7 +112,6 @@ function populateDropdowns(envelopes) {
     });
 }
 
-// Create Envelope
 
 createBtn.addEventListener("click", async () => {
 
@@ -152,7 +145,6 @@ createBtn.addEventListener("click", async () => {
 
 });
 
-// Delete Envelope
 
 async function deleteEnvelope(id) {
 
@@ -168,7 +160,6 @@ async function deleteEnvelope(id) {
 
 }
 
-// Edit Envelope
 
 async function editEnvelope(id) {
 
@@ -199,7 +190,6 @@ async function editEnvelope(id) {
 
 }
 
-// Transfer Money
 
 transferBtn.addEventListener("click", async () => {
 
@@ -246,6 +236,6 @@ transferBtn.addEventListener("click", async () => {
 
 });
 
-// Initial Load
+
 
 loadEnvelopes();
